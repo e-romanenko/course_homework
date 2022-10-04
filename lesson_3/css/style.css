@@ -1,0 +1,23 @@
+/*  коментар */
+/* (*) - запит до всіх обєктів */
+
+/* запит до селекту тегів*/
+div.text {color: darkblue;}
+
+p {color: dodgerblue;}
+
+a {color: rgb(231, 28, 214);}
+
+
+/*запит до селектів класу */
+
+.title {color: rgb(255, 0, 119);} /* заголовки*/
+.title1 {color: lightseagreen;}
+
+.list {color: crimson;} /*списки конкретне li*/
+
+.oneword{color: hotpink;} /* span з класом*/
+span {color: mediumspringgreen;}  /*запит до тегу*/
+
+.info{color: saddlebrown;} 
+
