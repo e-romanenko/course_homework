@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+}
+.block{
+   max-width: 810px;
+   margin: 0 auto;
+}
+body{
+   font-family: "Lato";
+   color: #424551
+}
+.block-title{
+   font-size: 46px;
+   font-weight: 900;
+   color: #1E212C;
+   line-height: 59.8px;
+   margin-top: 50px;
+   margin-bottom: 40px;
+}
+.block-image{
+   margin-bottom: 60px;
+}
+img{
+   max-width: 100%;
+   border-radius: 4px;
+}
+.block-text{
+   line-height: 25.6px;
+}
+.block-text p{
+   margin-bottom: 24px;
+}
+.block-bold{
+   font-size: 20px;
+   font-weight: 700;
+   color: #1E212C;
+   line-height: 30px;
+   margin-bottom: 31px; 
+}
+.quote{
+   background: url("../img/icons/braces.png") 0 0 no-repeat;
+   padding-left: 58px;
+   margin-bottom: 48px;
+}
+.block-text ul{
+   margin-bottom: 24px;
+}
+.block-text li{
+   padding-left: 32px;
+   margin-bottom: 4px;
+   min-height: 30px;
+   background: url("../img/icons/check.png") 0 6px no-repeat;
+}
+
+
+.background{
+   
+}
+
+.background-dekor{
+   font-size: 20px;
+   line-height: 2;
+   text-align: center;
+   border-radius: 10px;
+   margin-bottom: 100px;
+   box-shadow: 10px 10px 10px 2px;
+   background: url("../img/IMG_2934.jpeg") top left / contain no-repeat, linear-gradient(135deg, rgba(254,204,177,1) 0%,rgba(234,85,7,1) 18%,rgba(241,116,50,1) 53%,rgba(234,85,7,1) 85%,rgba(251,149,94,1) 100%);
+}
+
+.background-image-fixed{
+   min-height: 1000px;
+   max-width: 600px;
+   background-image: url("../img/IMG_2934.jpeg");
+   background-size: 50px 100px;
+   background-position: center;
+   background-attachment: fixed;
+   border-radius: 30px;
+   margin: 0 auto 100px auto;
+}
+
+.background-layer{
+   max-width: 900px;
+   margin: 100px auto;
+   padding: 25px;
+   box-shadow: 5px 7px 2px 3px , 5px 10px 2px inset ;
+   background: linear-gradient(45deg, rgba(254, 187, 187, 0.198) 0%,rgba(255, 92, 92, 0.13) 100%) 20px 30px / 300px no-repeat , url("../img/love.jpeg") bottom right repeat-y; 
+}
+.background-layer p{
+   color: rgb(56, 53, 53);
+   text-indent: 30px;
+   font-weight: 700;
+   text-align: justify;
+   text-decoration: underline;
+   text-transform: capitalize;
+   line-height: 2;
+   font-size: 17px;
+   text-shadow:  0px 1px 1px black;
+}
+
+.background-layer p:nth-child(odd){
+   text-decoration: none;
+   color: red;
+}
+
+.background-y {
+   max-width: 300px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/love.jpeg") center / 100px 50px repeat-y,  sandybrown;
+}
+.background-x {
+   max-width: 300px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/love.jpeg") center / 100px 50px repeat-x,  rgb(206, 92, 39);
+}
+
+.background-repeat {
+   max-width: 300px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/love.jpeg") center / 100px 50px ,  sandybrown;
+}
+
+
+.position-top-left {
+   max-width: 400px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/IMG_2934.jpeg") 0 0 / 100px 150px no-repeat, pink;
+}
+.position-top-right {
+   max-width:400px ;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/IMG_2934.jpeg") top right / 100px 150px no-repeat, plum ;
+}
+.position-bottom-left {
+   max-width: 400px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/IMG_2934.jpeg") bottom left / 100px 150px no-repeat, palevioletred ;
+}
+.position-bottom-right {
+   max-width: 400px;
+   min-height: 200px;
+   margin: 0 auto 100px auto;
+   background: url("../img/IMG_2934.jpeg") bottom right / 100px 150px no-repeat, burlywood;
+}
+
