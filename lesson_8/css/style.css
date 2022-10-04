@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+   font-family: "Larsseit";
+   src: url("../fonts/Larsseit-Bold.woff2") format(woff2),
+      url("../fonts/Larsseit-Bold.woff") format(woff);
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+[class*="__container"]{
+   max-width: 1230px;
+   margin: 0 auto;
+}
+body{
+   font-family:"Lato";
+   color: #424551;
+   background: url("../img/Background.png") bottom left no-repeat;
+}
+/*стаття 1*/
+.box-one {
+   max-width: 600px;  
+   margin: 20px auto 114px 0;
+}
+.box-one,
+.box-two{
+   outline: 2px solid burlywood;
+}
+.box-one h1 {
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: black;
+   margin-bottom: 40px;
+}
+.box__taxt {
+   font-size: 16px;
+   color: #424551;
+   line-height: 160%;
+}
+.box-one h3{
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 150%;
+   margin-top: 48px;
+   margin-bottom: 24px;
+}
+.box__taxt li{
+   background: url("../img/icons/check.svg") 0 6px / 16px 16px no-repeat;
+   padding-left:32px;
+}
+.box__taxt li:last-of-type{
+   margin-bottom: 4px;
+}
+.link{
+   color: darksalmon;
+}
+.link:hover{
+   color: indianred;
+}
+.link:visited{
+   color: maroon;
+}
+
+/*стаття 2*/
+.box-two{
+   max-width: 600px;  
+   margin: 0 0 114px auto;
+   
+}
+.box-two h6{
+   font-weight: 700;
+   line-height: 150%;
+   margin-bottom: 8px;
+}
+.box-two h5{
+   font-size: 20px;
+   line-height: 150%;
+   color: #787A80;
+   margin-bottom: 32px;
+}
+.box-two h1{
+   font-weight: 900;
+   font-size: 46px;
+   line-height: 130%;
+   color: black;
+   margin-bottom: 16px
+}
+.list{
+   margin-bottom: 32px;
+   line-height: 160%;
+   color: #424551;
+}
+.list li{
+   font-weight: 700;
+   margin-bottom: 4px;
+}
+
+.rate::before{
+   background: url("../img/icons/Star.svg") 0 0  no-repeat ;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+.courses::before{
+   background: url("../img/icons/Play.svg") 0 0  no-repeat ;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+.students::before{
+   background: url("../img/icons/Profile.svg") 0 0  no-repeat ;
+   content: "";
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+   margin-right: 8px;
+}
+
+.box-two__icons{
+   margin-top: 40px;
+}
+.facebook::before{
+   background: url("../img/icons/fb.svg") 0 0  no-repeat ;
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: inline-block; 
+}
+.behance::before{
+   background: url("../img/icons/be.svg") 0 0  no-repeat ;
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: inline-block; 
+}
+.twitter::before{
+   background: url("../img/icons/Twitter.svg") 0 0  no-repeat ;
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: inline-block;  
+}
+.linkedln::before{
+   background: url("../img/icons/in.svg") 0 0  no-repeat ;
+   content: "";
+   width: 24px;
+   height: 24px;
+   display: inline-block;
+}
+.box-two__icons a:hover{
+   outline: 1px solid rosybrown;
+}
+.box-two__icons a:not(:last-child){  
+   margin-right: 24px;
+}
+
+
+/* Стаття 3 */
+
+.box-three{
+   line-height: 2;
+   margin-bottom: 50px;
+   outline: 2px solid burlywood;
+}
+
+.box-three__line > li{
+   margin-bottom: 4px;
+   margin-left: 20px;
+   color: red;
+}
+.line__iteme>li{
+   color: dimgray;
+   margin-bottom: 2px;
+   margin-left: 20px;
+   padding-left: 18px;
+}
+.line__iteme>li::before{
+   content: "";
+   background: url("../img/icons/Plus.svg") center no-repeat;
+   width: 10px;
+   height: 10px;
+   display: inline-block;
+   margin-left: -18px;
+   margin-right: 8px;
+   min-width: 10px;
+}
+ul ul{
+      display: none;
+}
+ul li:hover ul{
+   display: block;
+}
+
+
+/* Гра */
+.play{
+   background-color: black;
+   outline: 2px solid red;
+   margin-bottom: 100px;
+
+}
+[class*=block]{
+   max-width: 800px;
+   margin: 0 auto;
+}
+.start{
+   width: 70px ;
+   height:70px ;
+   color: red;
+   margin-left:290px;
+   text-align: center;
+   text-shadow:1px 1px black;
+   padding-top: 30px;
+   border-radius: 7px 7px 0 0;
+   text-transform: uppercase;
+}
+.block-one {
+   font-family: "Larsseit";
+   font-weight: 700;
+   width: 650px ;
+   min-height:40px ;
+   border-radius:0 7px 0 7px ;
+   visibility: hidden;
+   text-align: center;
+   padding-top: 10px;
+   color: red;
+   text-transform: capitalize;
+   text-decoration: underline 2px black;
+   
+}
+.block-two {
+   width:30px ;
+   height:40px ;
+   margin-left:910px; 
+   visibility: hidden;
+}
+.block-three {
+   font-family: "Larsseit";
+   font-weight: 700;
+   width:400px;
+   min-height:30px;
+   margin-left:540px ;
+   border-radius:7px 0 7px 0;
+   visibility: hidden;
+   text-align: center;
+   padding-top: 5px;
+   color: red;
+   text-decoration: underline 2px black;
+   
+}
+.block-four {
+   width:30px ;
+   height:50px ;
+   margin-left:540px ;
+   visibility: hidden;
+}
+.block-five {
+   width:280px ;
+   height:20px ;
+   margin-left:290px ;
+   border-radius:7px 0 7px 0;
+   visibility: hidden;
+}
+.block-sixs {
+   width:20px ;
+   height:40px ;
+   margin-left:290px ;
+   visibility: hidden;
+}
+.block-seven {
+   width:50px ;
+   height:80px ;
+   margin-left:290px; 
+   visibility: hidden;
+}
+.block-eight {
+   width:230px ;
+   height:30px ;
+   margin-left:290px; 
+   border-radius:0 7px 0 7px ;
+   visibility: hidden;
+}
+.block-nine {
+   width:30px ;
+   height:18px ;
+   margin-left:490px; 
+   
+}
+.happy-end {
+   width:150px ;
+   height:150px ;
+   margin-left:490px; 
+   border-radius:0 7px 7px 7px;
+   text-transform: capitalize;
+   text-align: center;
+   padding-top:70px;
+   color:red;
+   text-shadow:1px 1px black;
+}
+
+.happy-end:hover:after{
+   content: ";)";
+   padding-left: 10px;
+}
+
+.start:hover,
+.block-one:hover,
+.block-two:hover,
+.block-three:hover,
+.block-four:hover,
+.block-five:hover,
+.block-sixs:hover,
+.block-seven:hover,
+.block-eight:hover,
+.block-nine:hover,
+.happy-end:hover{
+   background-color:white;
+   visibility: visible;
+}
+
+
+.start:hover+div,
+.block-one:hover+div,
+.block-two:hover+div,
+.block-three:hover+div,
+.block-four:hover+div,
+.block-five:hover+div,
+.block-sixs:hover+div,
+.block-five:hover+div,
+.block-seven:hover+div,
+.block-eight:hover+div,
+.block-nine:hover+div{
+   visibility: visible;
+   background-color: white;
+}
+
+/*Фото*/
+.foto{
+   max-width: 300px;
+   margin: 0 auto;
+   font-size: 0;
+   margin-bottom: 50px;
+}
+
+.line-1,
+.line-2,
+.line-3{
+   display: inline-block;
+   font-size: 0;
+}
+
+.part{
+   background-color: black;
+   width:100px;
+   height: 150px;
+   display: inline-block;
+   border: 1px solid red;
+}
+.line-1 .part:nth-child(1):hover{
+   background: url("../img/foto/image_part_001.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-1 .part:nth-child(2):hover{
+   background: url("../img/foto/image_part_002.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-1 .part:nth-child(3):hover{
+   background: url("../img/foto/image_part_003.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-2 .part:nth-child(1):hover{
+   background: url("../img/foto/image_part_004.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-2 .part:nth-child(2):hover{
+   background: url("../img/foto/image_part_005.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-2 .part:nth-child(3):hover{
+   background: url("../img/foto/image_part_006.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-3 .part:nth-child(1):hover{
+   background: url("../img/foto/image_part_007.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-3 .part:nth-child(2):hover{
+   background: url("../img/foto/image_part_008.jpg") 0 0 / 100px 150px no-repeat ;
+}
+.line-3 .part:nth-child(3):hover{
+   background: url("../img/foto/image_part_009.jpg") 0 0 / 100px 150px no-repeat ;
+}
+
+/* Кнопка*/
+
+.button{
+   max-width: 150px;
+   min-height: 50px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   background-color: red;
+   border-radius:  50px/ 100px;
+   text-align: center;
+   padding-top: 20px;
+   tab-size: 24px;
+   color: black;
+   box-shadow: 2px 3px 2px 1px black;
+}
+.button:hover,
+.footer-button:hover{
+   color: white;
+}
+.button:active{
+   box-shadow: 2px 3px 2px 1px white;
+}
+.box-foto{
+   max-width: 300px;
+   min-height: 450px;
+   margin: 0 auto;
+   background: url("../img/5D141E94-CAF9-436C-91E7-8FA6A712F4DC.jpeg") 0 0 / 300px 450px no-repeat;
+   border: 2px solid  black;
+   box-shadow: 1px 1px 3px 3px black;
+   margin-bottom: 50px;
+   display: none;
+}
+.box-foto:target{
+   display: block;
+}
+.box-foto:hover{
+   box-shadow: 1px 1px 3px 3px white; 
+}
+.blok-footer{
+   max-width: 670px;
+   min-height: 60px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+.footer-button{
+   display: inline-block;
+   max-width: 250px;
+   min-height: 50px;
+   background-color: black;
+   padding-top: 10px;
+   color: red;
+   box-shadow:2px 3px 2px 1px red ;
+   font-size:  26px;
+   border-radius:  100px/ 100px;
+}
+.footer-button:not(:last-of-type){
+   margin-right: 125px;
+}
+.footer-button:active{
+   box-shadow: 2px 3px 2px 1px white;
+}
