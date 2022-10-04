@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+@font-face {
+   font-family: Scriptorama;
+   src: url("../fonts/Scriptorama.woff2") format("woff2"), 
+      url("../fonts/Scriptorama.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: oblique;
+}
+
+@font-face { 
+   font-family: SolenaRegular;
+   src: url("../fonts/SolenaRegular.woff2") format("woff2"),
+      url("../fonts/SolenaRegular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+
+body{
+   font-size: 20px;
+   line-height: 2;
+}
+
+.link{
+   font-family: "SolenaRegular", serif;
+   color: crimson;
+   font-size: 40px;
+   text-align: center;
+   letter-spacing: 10px;
+   padding:  15px  20px 15px 20px;
+}
+.link-header{
+   letter-spacing: 3px;
+   word-spacing: 5px;
+   text-shadow: 1px 1px 1px;
+}
+
+.book{
+color:blueviolet ;
+}
+.video{
+color:navy ;
+}
+.autor{
+color:indigo;
+}
+
+.title-header{
+   font-family: "Scriptorama", serif;
+   color: black;
+   text-transform: capitalize;
+   font-size: 70px;
+   text-align: center;
+   text-shadow: 10px 10px 7px black;
+   padding: 10px;
+}
+
+h2.title-main {
+   font-family: "Scriptorama", serif;
+   color: mediumvioletred;
+   text-transform: uppercase;
+   font-size: 30px;
+   text-shadow: 2px 1px 1px crimson;
+}
+
+.text p{
+   font-family: "Oswald", serif;
+   font-weight:400;
+   line-height: 1.75;
+}
+
+
+.text+p{
+   font-family: "Oswald", serif;
+   font-weight:700;
+}
+.text~p{
+   color: black;
+   text-align: justify;
+   text-transform: capitalize;
+   text-indent: 20px;
+}
+p {
+   line-height: 1;
+   word-spacing: 5px;
+}
+
+/* ! */
+.text-mova>p{
+   color: slategrey;
+   text-align: center;
+   text-decoration: underline;
+   margin-bottom: 20px;
+}
+#mova { 
+   text-align: center;
+}
+/* ! */
+.text-muperemojemo>p{
+   color: grey ;
+   text-align: left;
+   text-decoration: overline;
+   margin-bottom: 20px;
+   margin-left: 220px;
+}
+.text-muperemojemo>h2{
+   margin-left: 50px;
+}
+/* ! */
+.text-angelu>p{
+   color:silver;
+   text-align: right;
+   text-decoration: line-through;
+   text-decoration: none;
+   margin-right: 200px;
+   margin-bottom: 50px;
+}
+#angelu{
+   text-align: right;  
+}
+.text-angelu>h2{
+   margin-right: 250px;
+}
+
+img{
+margin-left: 500px;
+margin-right: 500px;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+
+.top{
+   text-align: center;
+   margin-bottom: 40px;
+   margin-top: 20px;
+}
+span{
+   color: blue;
+   text-transform: uppercase;
+}
