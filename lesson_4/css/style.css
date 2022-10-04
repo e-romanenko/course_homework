@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+   font-family: Lato;
+   src: url("../fonts/Lato-BlackItalic.woff2") format("woff2"),
+   url("../fonts/Lato-BlackItalic.woff") format("woff");
+   font-display: swap;
+   font-weight: 900;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: Larsseit;
+   src: url("../fonts/Larsseit-Regular.woff2") format("woff2"),
+   url("../fonts/Larsseit-Regular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: Larsseit;
+   src: url("../fonts/Larsseit-Medium.woff2") format("woff2"),
+   url("../fonts/Larsseit-Medium.woff") format("woff");
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: Larsseit;
+   src: url("../fonts/Larsseit-Bold.woff2") format("woff2"),
+   url("../fonts/Larsseit-Bold.woff") format("woff");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+/*font-family: Larssit;
+font-weight: 700;
+
+font-family: Roboto;
+font-weight: 700;*/
+
+.text-header {
+   color: purple;
+}
+p {
+   color: mediumblue;
+   font-family: Larssit;
+   font-weight: 400;
+}
+.link {
+   color: lawngreen;
+   font-family: Roboto;
+   font-weight: 700;
+}
+.link-ul {
+   color: lightpink;
+   font-family: Roboto;
+   font-weight: 900;
+}
+a.link-ol {
+   color: saddlebrown;
+   font-family: Roboto;
+   font-weight: 900;
+}
+h1.title {
+   color: salmon;
+   font-family: Lato;
+}
+.title {
+   color: orangered;
+   font-family: Larssit;
+   font-weight: 500;
+}
+.info {
+   color: slategray;
+   font-family: Roboto;
+   font-weight: 900;
+}
+.list {
+   color: yellow;
+   font-family: Roboto;
+   font-weight: 700
+}
+.title-main {
+   color: violet;
+   font-family: Roboto;
+   font-weight: 500
+}
+.title-link{
+   color: violet;
+   font-family: Roboto;
+   font-weight: 900
+}
+#asia,
+#art {
+   color: springgreen;
+   font-family: Roboto;
+   font-weight: 700
+}
+#top {
+   color: teal;
+
+}
+h6 {
+   color: tomato;
+}
+.paragraf {
+   color: skyblue;
+   font-family: Roboto;
+   font-weight: 900
+}
+/* div.spec-text {
+   color: tan;}      приорітетність: коли задаєш стилі тегу це більш пріорітетніше ніж стилі які підключаются до класу батьківсткого тега цього класу  */
+
+.unik {
+   color: thistle;
+}
+span.unik1 {
+   color: springgreen;
+}
+.unik2{
+   color: tomato;
+}
+
+p.text {
+   color:tan;
+   font-family: Roboto;
+   font-weight: 700
+}
+
