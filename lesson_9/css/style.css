@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+
+body{
+   font-family: "Roboto", serif;
+   font-style: italic;
+   text-align: center;
+   color: grey;
+}
+
+[class*="__container"]{
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+h1{
+   font-weight: 700;
+   text-decoration: underline;
+   margin: 20px 20px;
+   text-transform: uppercase;
+   font-size: 30px;
+   letter-spacing: 3px;
+   
+}
+
+ul {
+   line-height: 2;
+   margin-bottom: 20px;
+}
+
+ul li::before{
+   content: "";
+   background: url("../img/icons/VectorStroke.svg") 0 2px no-repeat;
+   width: 16px;
+   height: 16px;
+   display: inline-block;
+}
+.red {
+   color: red;
+   text-shadow: 1px 1px 1px gray;
+}
+.green {
+   color: lawngreen;
+   text-shadow: 1px 1px 1px gray;
+}
+.blue {
+   color: blue;
+   text-shadow: 1px 1px 1px gray;
+}
+
+.text-red{
+outline: 2px solid red;
+margin-left: 5px;
+}
+.text-green{
+   outline: 2px solid greenyellow;
+   margin-left: 5px;
+}
+.text-blue{
+   outline: 2px solid blue;
+   margin-left: 5px;
+}
+
+img{
+   max-width: 100%;
+   margin-bottom: 50px;
+   border-radius: 3px;
+   outline: 2px solid rgb(72, 74, 74);
+   box-shadow: 2px 2px 2px 3,px gray;
+}

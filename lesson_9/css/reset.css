@@ -1,0 +1,45 @@
+/* ___обнулення стилів тегів___*/
+*,
+*::before,
+*::after {
+   margin: 0;  /* Властивість margin - встановлює зовнішні відступи (поля) навколо елемента.*/
+   padding: 0; /* Властивість padding - задає відступ навколо вмісту елемента (тобто, задає відстань між кордоном елемента та уявним прямокутником, котрий обмежує текст)*/
+   border: none; /* обведення блоку, контент стискає в середину*/
+   box-sizing: border-box;/*Властивість box-sizing дозволяє змінити алгоритм розрахунку розмірів блоку, щоб властивості width і height задавали розміри не контенту, а саме розміри блоку.*/
+}
+li{
+   list-style: none;
+}
+a{
+   color: inherit;
+}
+a:link,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: inherit ;
+   font-size: inherit;
+}
+input, /*<input> призначений для створення текстових полів, різних кнопок, перемикачів і прапорців.*/
+button, /* створює на веб-сторінці кнопку*/
+textarea /* визначає область в яку можна вводити декілька рядків тексту.*/
+{ 
+   cursor: pointer;
+   color: inherit;
+   background-color: inherit;
+}
+body {
+   line-height: 1;
+}
