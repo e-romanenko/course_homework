@@ -8,7 +8,7 @@ body{
 }
 .wrapper{
    position: relative;
-   overflow: hidden;
+  /* overflow: hidden;*/
    min-height: 100%;
 }
 
@@ -34,6 +34,7 @@ body{
 .menu__item {
    position: relative;
    display: inline-block;
+   text-shadow: 1px 1px 1px black;
 }
 .menu__item:not(:last-child){
    margin-right: 50px;
@@ -88,8 +89,8 @@ body{
    width: 150px;
    height: 150px;
    border-radius: 52% 48% 52% 48% / 49% 64% 36% 51% ;
-   background-color: rgba(255, 255, 0, 0.777);
-   box-shadow: 3px 3px 20px 25px rgba(255, 255, 0, 0.848);
+   background-color: yellow;
+   box-shadow: 3px 3px 20px 25px yellow;
    position: relative;
    top:450px;
    left: 650px;
@@ -172,3 +173,41 @@ body{
    top: 550px;
 }
 
+
+.content{
+background-color: antiquewhite;
+height: 2800px;
+padding: 50px;
+margin-top: 50px;
+line-height: 2;
+text-align: center;
+color: rgb(170, 174, 178);
+}
+
+.text{
+   font-size: 22px;
+   font-weight: 900;
+   padding: 20px;
+   text-shadow: 2px 2px 2px black;
+}
+
+.text--pink {
+   background-color: rgba(247, 13, 157, 0.698);
+   position: sticky;
+   top: 50px;
+}
+.text--blue {
+   background-color: rgba(0, 0, 255, 0.665);
+   position: sticky;
+   top: 50px;
+}
+.text--red {
+   background-color: rgba(255, 0, 0, 0.687);
+   position: sticky;
+   top: 50px;
+}
+.text--yellow {
+   background-color: rgba(255, 255, 0, 0.75);
+   position: sticky;
+   top: 50px;
+}
