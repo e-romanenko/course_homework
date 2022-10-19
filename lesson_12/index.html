@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson_12</title>
+</head>
+<body>
+   <div class="wrapper">
+
+      <header>
+         <div class="menu">
+            <div class="menu__container">
+               <ul class="menu__list list">
+                  <li class="list__item ">
+                     <a class="list__link" href="#id-transformation2d">transformation 2D</a>
+                     <ul class="list__sub-menu sub-menu">
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-translete2d">translete</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-scale2d">scale</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-rotate2d">rotate</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-skew2d">skew</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-multi-recording2d">multi-recording</a></li>
+                     </ul>
+                  </li>
+                  <li class="list__item">
+                     <a class="list__link" href="#id-transform-origin">transform-origin</a>
+                  </li>
+                  <li class="list__item">
+                     <a class="list__link" href="#id-perspective">perspective</a>
+                  </li>
+                  <li class="list__item">
+                     <a class="list__link" href="#id-transformation3d">transformation 3D</a>
+                     <ul class="list__sub-menu sub-menu sub-menu--color">
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-translate3d">translate-3d</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-scale3d">scale-3d</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-rotate3d">rotate-3d</a></li>
+                        <li class="sub-menu__item"> <a class="sub-menu__link" href="#id-multi-recording3d">multi-recording-3d</a></li>
+                     </ul>
+                  </li>
+                  <li class="list__item">
+                     <a class="list__link" href="#id-transform-style">transform-style</a>
+                  </li>
+                  <li class="list__item">
+                     <a class="list__link" href="#id-backface">backface-visibility</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </header>
+
+      <main>
+         <div id="id-transformation2d" class="transformation">
+            <div class="transformation__container">
+               <h1 class="transformation__title">CSS трансформація об'єктів "transform" 2D</h1>
+                  <p>Трансформація об'єктів НІЯК не впливає на оточення.</p>
+                  <p>Можуть бути як відємні значення так і додатні</p>
+                  <p>Можливо задавати значення окремо по "Х-горизонталь" і "Y-вертикаль",так і одним записом разом transform:дія(0, 0)</p>
+                  <p>Не працює з рядковими об'єктами, необхідно надати ряд.ел властивість display: inline-block; (або  position: absolute;)</p>
+
+               <div id="id-translete2d" class="transformation__property translete">
+                  <h2 class="transformation__title">translete</h2>
+                  <p>translete - рухає елемент на нове місце, зміщується відносно першочергового положення об'єкта вправо і в низ . Якщо вказуємо у %, тоді % береться від розмірів самого елемента. ( "--" ліво/верх,  '+' право/вниз)</p>
+                  <p>transform: translate(20px, 20px); / :hover -> transform:translate(-20px, -20px)</p>
+                  <div class="translete__object object">
+                     <div class="object__element">HELLO I am переміщення об'єкта </div>
+                  </div>
+               </div>
+
+               <div id="id-scale2d" class="transformation__property scale">
+                  <h2 class="transformation__title">scale</h2>
+                  <p>scale - це маштабування обєкта, можна зробити обєкт більше чим батьківськи блок (значення від 1->2/3/.../n) також зменшити (1->0, де 0 це обєкта не має) </p>
+                  <p>transform: scale(0.7); / :hover -> transform: scale(1.5);</p>
+                  <div class="scale__object object">
+                     <div class="object__element ">HELLO I am маштабування об'єкта</div>
+                  </div>
+               </div>
+
+               <div id="id-rotate2d" class="transformation__property rotate">
+                  <h2 class="transformation__title">rotate</h2>
+                  <p> rotate - повертає обєкт по годинникові стрілці ( використовуємо "+" значення), проти годинниковоі стрілки (використовуємо "-" відємні значення)</p>
+                  <p>transform: rotate(15deg); / :hover -> transform: rotate(-15deg);</p>
+                  <div class="rotate__object object">
+                     <div class="object__element ">HELLO I am повертання об'єкта</div>
+                  </div>
+               </div>
+
+               <div id="id-skew2d" class="transformation__property skew">
+                  <h2 class="transformation__title">skew</h2>
+                  <p>skew - деформує нахиляє обєкт відносно координатів осей Х і Y </p>
+                  <p>transform: skew(10deg,20deg); / :hover -> transform: skew(-30deg,-20deg);</p>
+                  <div class="skew__object object">
+                     <div class="object__element ">HELLO I am  деформація елемента</div>
+                  </div>
+               </div>
+
+               <div id="id-multi-recording2d" class="transformation__property multi-recording">
+                  <h2 class="transformation__title">multi-recording</h2>
+                  <p>мультизапис - в одному місці задаємовластивості для transform </p>
+                  <p>transform: translate(15px,15px)  scale(0.9)  rotate(180deg)  skew(5deg,5deg);</p>
+                  <div class="multi-recording__object object">
+                     <div class="object__element">HELLO I am мультизапис</div>
+                  </div>
+               </div>
+
+               <div id="id-transform-origin" class="transformation__property transform-origin">
+                  <h2 class="transformation__title">transform-origin</h2>
+                  <p>transform-origin - дозволяє зсунути центр трансформації відбувається зміна положення центра. Працює з "rotate"/ "scale"/ "skew"</p>
+                  <p>:hover -> transform: rotate(100deg); transform-origin: bottom right;</p>
+                  <div class="transform-origin__object object">
+                     <div class="object__element">HELLO I am цвях який можна зміщувати</div>
+                  </div>
+               </div>
+
+               <div id="id-perspective" class="transformation__property perspective">
+                  <h2 class="transformation__title">perspective, perspective-origin</h2>
+                  <p>perspective - встановлення глибини. Задається БАТЬКІВСЬКОМУ ЕЛЕМЕНТУ </p>
+                  <p>perspective: 200px;    transform: rotateX(60deg);</p>
+                  <div class="transform__perspective object">
+                     <div class="object__element">HELLO I am встановленя глибини</div>
+                  </div>
+                  <p>perspective-origin -  зміна точки початку координат.</p>
+                  <p>perspective-origin: 0 0; transform: rotateY(60deg);</p>
+                  <div class="transform__perspective-origin object">
+                     <div class="object__element">HELLO I am зміна точки початку координат</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="id-transformation3d" class="transform3d">
+            <div class="transform3d__container">
+               <h2 class="transformation__title">ТРАНСФОРМАЦІЯ 3D (x,y,z)</h2>
+               <p>transformation 3D з'являєтся додаткова вісь Z</p>
+
+               <div id="id-translate3d" class="transform3d__property translate3d"> 
+                  <h3 class="transformation__title">translate-3d</h3>
+                  <p> transform: translate3d(20px, 20px, 10px);</p>
+                  <div class="translate3d__object3d object3d object3d--translate">
+                     <div class="object3d__element object3d__element--translate">HELLO I am зміна місця об'єкта</div>
+                  </div>
+               </div>
+
+               <div id="id-scale3d" class="transform3d__property scale3d"> 
+                  <h3 class="transformation__title">scale-3d</h3>
+                  <p>transform: scale3d(0.8, 0.5, 1.3);</p>
+                  <div class="scale3d__object3d object3d object3d--scale">
+                     <div class="object3d__element object3d__element--scale">HELLO I am маштабування об'єкта</div>
+                  </div>
+               </div>
+
+               <div id="id-rotate3d" class="transform3d__property rotate3d"> 
+                  <h3 class="transformation__title">rotate-3d</h3>
+                  <p>transform: rotate3d(1,3,1,25deg);</p>
+                  <div class="rotate3d__object3d object3d object3d--rotate">
+                     <div class="object3d__element object3d__element--rotate">HELLO I am повертання об'єкта</div>
+                  </div>
+               </div>
+
+               <div id="id-multi-recording3d" class="transform3d__property multi-recording3d"> 
+                  <h3 class="transformation__title">multi-recording-3d</h3>
+                  <p>transform: translate3d(20px, 10px, 30px) scale3d(1, 1, 1) rotate3d(1,1,1,10deg);</p>
+                  <div class="multi-recording3d__object3d object3d object3d--multi-recording">
+                     <div class="object3d__element object3d__element--multi-recording">HELLO I am мультизапис</div>
+                  </div>
+               </div>
+
+               <div id="id-transform-style" class="transform3d__property transform-style"> 
+                  <h3 class="transformation__title">transform-style</h3>
+                  <p>transform-style - визначає як дочірній елемент має відображатись у 3D просторі. <br> ЗАДАЄТЬСЯ БАТЬКІВСЬКОМУ ЕЛЕМЕНТУ разом з ПЕРСПЕКТИВОЮ</p>
+                  <p> transform-style: preserve-3d; <br>perspective: 150px; </p>
+                  <div class="transform-style3d__object3d object3d object3d--transform-style">
+                     <div class="object3d__element object3d__element--transform-style">HELLO I am інша сторона медалі
+                     </div>
+                  </div>
+               </div>
+
+               <div id="id-backface" class="transform3d__property backface"> 
+                  <h3 class="transformation__title">backface-visibility</h3>
+                  <p>backface - відображення зворотнього боку об'єкту</p>
+                  <p>backface-visibility: hidden;</p>
+                  <div class="backface__object3d object3d object3d--backface">
+                     <div class="object3d__element object3d__element--backface">HELLO I am інша сторона медалі</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer></footer>
+
+   </div>
+</body>
+</html>

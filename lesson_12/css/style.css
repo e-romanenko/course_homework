@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+body{
+   font-family: "Roboto";
+   font-size: 16px;
+   font-weight: 400;
+   font-style: normal;
+}
+.wrapper{
+   position: relative;
+   overflow: hidden;
+   min-height: 100%;
+}
+
+[class*="__container"]{
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.transformation,
+.transform3d {
+   background-color: rgb(198, 187, 171);
+   line-height: 2;
+   text-align: center;
+   padding: 50px;
+}
+
+.transformation__title{
+   color: rgb(255, 255, 255);
+   font-weight: 700;
+   font-size: 24px;
+   text-align: center;
+   text-shadow: 2px 1px 1px black;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+.transformation p,
+.transform3d p{
+   padding: 5px;
+   color: rgb(60, 54, 54);
+   font-size: 17px;
+   margin-bottom: 10px;
+}
+
+.object{
+   background-color: rgb(243, 246, 248);
+   width: 200px;
+   height: 200px;
+   margin: 20px;
+}
+.transformation__property,
+.transform3d__property{
+   border: 1px solid  black;
+   box-shadow: 2px 1px 10px black;
+   padding:40px 0 ;
+   background-color: rgba(166, 155, 143, 0.82);
+}
+.transformation__property:not(:last-child),
+.transform3d__property:not(:last-child){
+   margin-bottom:50px;
+}
+.object__element{
+   width: 200px;
+   height: 200px;
+   background-color: deeppink;
+   padding: 40px;
+   text-align: center;
+   color: aliceblue;
+}
+
+
+/*!translete - рухає елемент на нове місце, зміщується відносно першочергового положення об'єкта вправо і в низ. Якщо вказуємо у %, тоді % береться від розмірів самого елемента.*/
+.translete__object .object__element{
+   transform: translate(20px, 20px);
+}
+.translete__object .object__element:hover{
+   transform: translate(-20px, -20px);
+   text-shadow: 1px 1px 2px black;
+}
+
+/*!scale - це маштабування обєкта, можна зробити обєкт більше чим батьківськи блок (значення від 1->2/3/.../n) також зменшити (1->0, де 0 це обєкта не має)*/
+.scale__object .object__element{
+transform: scale(0.7);
+}
+.scale__object .object__element:hover{
+   transform: scale(1.5);
+   text-shadow: 1px 1px 2px black;
+}
+
+/*!rotate - повертає обєкт по годинникові стрілці ( використовуємо "+" значення), проти годинниковоі стрілки (використовуємо "-" відємні значення)*/
+.rotate__object .object__element{
+   transform: rotate(15deg);
+}
+.rotate__object .object__element:hover{
+   transform: rotate(-15deg);
+   text-shadow: 1px 1px 2px black;
+}
+
+/*!skew - деформує нахиляє обєкт відносно координатів осей Х і Y*/
+.skew__object .object__element{
+transform: skew(10deg,20deg);
+}
+.skew__object .object__element:hover{
+   transform: skew(-30deg,-20deg);
+   text-shadow: 1px 1px 2px black;
+}
+
+/*!мультизапис - в одному місці задаємовластивості для transform*/
+.multi-recording__object .object__element{
+   transform: translate(15px,15px) scale(0.9)
+}
+.multi-recording__object .object__element:hover{
+transform: translate(15px,15px) scale(0.9) rotate(180deg) skew(5deg,5deg);
+background-color: rgba(255, 20, 145, 0.503);
+text-shadow: 1px 1px 2px black;
+}
+
+/*!transform-origin - відбувається зміна положення центра ( Словами, % px, 0 0).*/
+.transform-origin__object .object__element{
+   transform: rotate(10deg);  
+}
+.transform-origin__object .object__element:hover{
+transform: rotate(100deg);
+transform-origin: bottom right;
+text-shadow: 1px 1px 2px black;
+}
+
+
+/*?perspective - встановлення глибини. Задається БАТЬКІВСЬКОМУ ЕЛЕМЕНТУ*/
+.transform__perspective{
+   perspective: 200px;
+}
+.transform__perspective .object__element{
+   transform: rotateX(60deg);
+}
+.transform__perspective .object__element:hover{
+   transform: rotateY(-60deg);
+   text-shadow: 1px 1px 2px black;
+}
+/*?perspective-origin -  зміна точки початку координат.*/
+.transform__perspective-origin{
+   perspective: 400px;
+   perspective-origin: 0 0;
+}
+.transform__perspective-origin .object__element{
+   transform: rotateY(60deg);
+}
+.transform__perspective-origin .object__element:hover{
+   transform: rotateX(-60deg);
+   text-shadow: 1px 1px 2px black;
+}
+
+
+.object3d{
+   background-color: rgb(249, 245, 248);
+   width: 200px;
+   height: 200px;
+   margin: 20px;
+}
+.object3d__element{
+   width: 200px;
+   height: 200px;
+   background-color: rgb(204, 25, 236);
+   padding: 40px;
+   text-align: center;
+   color: aliceblue;
+}
+
+/*! translate зміна місця положення*/
+.object3d--translate{
+   perspective: 200px;
+   perspective-origin: center;
+}
+.object3d__element--translate{
+   transform: translate3d(20px, 20px, 10px);
+}
+.object3d__element--translate:hover{
+   transform: translate3d(-20px, -20px, 10px);
+   text-shadow: 1px 1px 2px black;
+}
+
+/*! scale маштабування*/
+.object3d--scale{
+   perspective: 200px;
+   perspective-origin: center;
+}
+.object3d__element--scale{
+   transform: scale3d(0.8, 0.5, 1.3);
+}
+
+/*! існує 3D матриця, можна використовувати її. 25deg - кут нахилу */
+.object3d--rotate{
+   perspective: 200px;
+   perspective-origin: center;
+}
+.object3d__element--rotate{
+   transform: rotate3d(1,3,1,25deg);
+}
+
+/*! мультизапис*/
+.object3d--multi-recording{
+   perspective: 200px;
+   perspective-origin: center;
+}
+.object3d__element--multi-recording{
+   transform: translate3d(20px, 10px, 30px) scale3d(1, 1, 1) rotate3d(1,1,1,10deg);
+}
+
+/*! transform-style - визначає як дочірній елемент має відображатись у 3D просторі. ЗАДАЄТЬСЯ БАТЬКІВСЬКОМУ ЕЛЕМЕНТУ*/
+.object3d--transform-style{
+   perspective: 150px;
+   /*transform-style: flat; за замовчуванням -плоский. МИ бачимо весь обєскт*/
+   transform-style: preserve-3d;
+   background-color:  rgba(243, 246, 248, 0.537);
+}
+.object3d__element--transform-style{
+   transform: rotateY(0deg);
+   transition: all 0.4s ease 0s;
+}
+.object3d--transform-style:hover .object3d__element--transform-style{
+   transform: rotateY(180deg);
+   text-shadow: 2px 2px 2px black;
+}
+
+/*! backface-visibilyty відображає зворотній бік*/
+.object3d--backface{
+   perspective: 150px;
+   transform-style: preserve-3d;
+}
+.object3d__element--backface{
+   backface-visibility: hidden;
+}
+.object3d--backface:hover .object3d__element--backface{
+   transform: rotateY(180deg);
+}
+
+/*menu*/
+.menu__container{
+   max-width: 100%;
+}
+.menu {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   background-color:  rgb(166, 155, 143);
+   z-index: 100;
+   padding: 10px;
+}
+.list{
+   font-size: 0;
+}
+.list__item{
+   position: relative;
+   display: inline-block;
+   border: 1px solid black;
+   padding: 5px 15px;
+   box-shadow: 1px 2px 2px 2px;
+   border-radius: 2px;
+   background-color: rgb(218, 209, 206);
+}
+.list__item .list__link:hover{
+   color: rgb(64, 57, 57);
+   transform: scale(0.8);
+}
+.list__item .sub-menu__link:hover{
+   color:  deeppink;
+   transform: scale(1.3);
+   display: inline-block;
+   
+}
+.list__item:active{
+   transform: translate(2px, 2px);
+   box-shadow: 1px 1px 1px 1px;
+}
+.sub-menu--color .sub-menu__link:hover{
+   color: rgb(204, 25, 236);
+   transform: scale(1.3);
+   display: inline-block;
+}
+
+.list__item:hover .sub-menu{
+   opacity: 1;
+   visibility: visible;
+   top:100%;
+   
+}
+
+.list__item:not(:last-child){
+   margin-right: 70px;
+}
+.list__link{
+   color: gray;
+   display: inline-block;
+   font-size: 20px;
+   max-width: 100%;
+}
+.sub-menu {
+   background-color: rgb(166, 155, 143);
+   padding: 15px;
+   position: absolute;
+   min-width: 200px;
+   border-radius: 5px;
+   top: 100px;
+   left: 5px;
+   opacity: 0;
+   visibility: hidden;
+   
+}
+.sub-menu__item{
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+   padding: 10px;
+}
+.sub-menu__item:active{
+   transform: scale(0.7);
+}
+
+
+
+
