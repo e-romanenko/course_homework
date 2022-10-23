@@ -461,7 +461,7 @@ transition-delay: 0.5s / 0ms - затримка виконання перехо�
    background-image: radial-gradient(circle, #dfe0ff, #d8e7ff, #d6edff, #d8f1fc, #def5f9);
    box-shadow: 0px 0px 50px 10px rgb(239, 238, 238);
    opacity: 0;
-   animation: moon 12s linear 1 6s;
+   animation: moon 11s linear 1 6s;
 }
 @keyframes moon{
    0%{
@@ -486,7 +486,7 @@ transition-delay: 0.5s / 0ms - затримка виконання перехо�
    border-radius: 50%;
    position: absolute;
    opacity: 0;
-   animation: star 13s linear 1 7s;
+   animation: star 11s linear 1 7s;
 }
 @keyframes star{
    0%{
