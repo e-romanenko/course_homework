@@ -60,14 +60,20 @@ transition-delay: 0.5s / 0ms - затримка виконання перехо�
    position: relative;
    z-index: 1;
    box-shadow: 5px 5px 5px 2px rgb(66, 63, 63);
-   animation: game 9s ease 1 5s forwards;
+   animation: game 12s ease 1 5s forwards;
 }
 @keyframes game{
    0%{
-      background-color: none;
+   
+   }
+   50%{
+      background-color: #0120e969;
+   }
+   75%{
+      background-color: #0120e969;
    }
    100%{
-      background-color: #0120e969;
+
    }
 
 }
