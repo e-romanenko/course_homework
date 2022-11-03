@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>lesson_16</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+         <div class="header__container"></div>
+      </header>
+
+      <main class="page">
+         <div class="page__container">
+
+            <div class="page__element">
+               <h2 class="page__title">Анкета</h2>
+            <!-- input ОДНОРЯДКОВИЙ ВВІД ДАНИХ-->  
+            <!-- form-основний блок форми + input-елемент form   type="text" -->
+               <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data" >
+                  <div class="form__line" >
+                     <label class="form__label" for="name-1">Введіть ваше Прізвище та Ім'я*</label>
+                     <input id="name-1" class="form__input" type="text" name="name"  placeholder="Прізвище та І'мя" autocomplete="off" reguired tabindex="1" >
+                  </div>
+               
+                  <div class="form__line" >
+                     <label class="form__label" for="age-1">Ведіть ваш вік</label>
+                     <input id="age-1" class="form__input" type="text" name="age"  placeholder="Вік" autocomplete="off"  tabindex="-1" >
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="email" -->
+                  <div class="form__line">
+                     <label class="form__label" for="email-1">Введіть ваш E-mail*</label>
+                     <input id="email-1" class="form__input" type="email" name="email"  placeholder="E-mail" autocomplete="off" reguired tabindex="2">
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form   type="password" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="password-1">Введіть пароль*</label>
+                     <input id="password-1" class="form__input" type="password" name="password"  placeholder="Пароль" autocomplete="off" reguired tabindex="3" >
+                  </div>
+               
+            <!-- form-основний блок форми + input-елемент form    type="tel" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="number-phone-1">Введіть ваш телефон*</label>
+                     <input id="number-phone-1" class="form__input" type="tel" name="number-phone"  placeholder="Телефон" autocomplete="off" reguired tabindex="4">
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="file" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="file-1">Додати ваше фото</label>
+                     <input id="file-1" class="form__input" type="file" name="file"  multiple accept="image/png, image/jpeg" tabindex="-1" >
+                  </div>
+                  
+            <!-- form-основний блок форми + input-елемент form    type="number" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="number-1">Секретне число</label>
+                     <input id="number-1" class="form__input" type="number" name="secret-number"  placeholder="Секретне число" autocomplete="off"  tabindex="-1">
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="search" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="request-1"> Введіть ваш запит</label>
+                     <input id="request-1" class="form__input" type="search" name="request"  placeholder="Введіть ваш запит" autocomplete="off"  tabindex="-1">
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="date" -->         
+                  <div class="form__line" >
+                     <label class="form__label" for="date-1">Дата</label>
+                     <input id="date-1" class="form__input" type="date" name="date"  tabindex="-1">
+                  </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="checkbox" -->        
+                  <div class="form__line" >
+                     <div class="checkbox">
+                        <input id="car-1" class="checkbox__input" type="checkbox" name="car" tabindex="-1">
+                        <label class="checkbox__label" for="car-1"> <span class="checkbox__text">Є авто?</span></label>
+                     </div>
+                  </div>
+                     <div class="form__line" >
+                        <div class="checkbox">
+                           <input id="flat-1" class="checkbox__input" type="checkbox" name="flat" value="yes"  tabindex="-1">
+                           <label class="checkbox__label" for="flat-1"><span class="checkbox__text">Є власне житло?</span></label>
+                        </div>
+                     </div>
+
+            <!-- form-основний блок форми + input-елемент form    type="radio" -->
+                  <div class="form__line">        
+                     <h3>Ви маєте домашню тваринку?</h3>
+                     <div class="form__radio" >
+                        <input id="yes" class="form__input-radio" type="radio" name="pet" value="yes" tabindex="-1">
+                        <label class="form__label" for="yes">Так</label>
+                     </div>
+                     <div class="form__radio" >
+                        <input id="no" class="form__input-radio" type="radio" name="pet" value="no"  tabindex="-1">
+                        <label class="form__label" for="no">Ні</label></div>
+                     <div class="form__radio" >
+                        <input id="plan" class="form__input-radio" type="radio" name="pet" value="plan" tabindex="-1">
+                        <label class="form__label" for="plan">Планую завести</label>
+                     </div>
+                  </div>  
+
+            <!-- form-основний блок форми + textarea-елемент form -->     
+            <!-- textarea- ВВІД БАГАТОРЯДКОВОГО ТЕКСТУ -->     
+                  <div class="form__line">
+                     <label class="form__label" for="massege-1">Надіслати нам повідомлення</label>
+                     <textarea class="form__textarea" name="massege" id="massege-1" placeholder="введіть свій текст"></textarea>
+                  </div>
+
+
+            <!-- form-основний блок форми + select-елемент form СПИСОК  -->      
+                  <div class="form__line" >
+                     <select class="form__select" name="list" multiple > 
+                        <option selected value=""> пункт 1</option>
+                        <option value=""> пункт 2</option>
+                        <option value=""> пункт 3</option>
+                        <option value=""> пункт 4</option>
+                        <option value=""> пункт 5</option>
+                        <option value=""> пункт 6</option>
+                        <option value=""> пункт 7</option>
+                     </select>
+                  </div>
+
+            <!-- form-основний блок форми + button-елемент form КНОПКА-->
+                     <div class="form__line" >
+                        <button class="form__button" type="submit"> НАДІСЛАТИ </button>
+                     </div>                 
+
+               </form> 
+            </div>
+            
+            <div class="page__element">
+               <div class="form2">
+                  <div class="form2__image">
+                     <img src="img/illustration.svg" alt="picture">
+                  </div>
+                  <div class="form2__questionnaire questionnaire">
+                     <div class="questionnaire__title">
+                        <h6>Any questions?</h6>
+                        <h2>Drop us a line</h2>
+                     </div>
+
+                     <form class="questionnaire__line line" method="post" action="https://jsonplaceholder.typicode.com/posts">
+                        <div class="line__item">
+                           <label class="line__label" for="fn">First Name*</label>
+                           <input class="line__input" id="fn" name="first-name" type="text" placeholder="Your first name" required>
+                        </div>
+                        <div class="line__item">
+                           <label class="line__label" for="ln">Last  Name*</label>
+                           <input class="line__input" id="ln" name="last-name"  type="text" placeholder="Your last name" required>
+                        </div>
+                        <div class="line__item">
+                           <label class="line__label" for="em">Email*</label>
+                           <input class="line__input" id="em" name="email-working"  type="email" placeholder="Your working email" required>
+                        </div>
+                        <div class="line__item">
+                           <label class="line__label" for="ph">Phone</label>
+                           <input class="line__input" id="ph" name="phone-number"  type="tel" placeholder="Your phone number">
+                        </div>
+
+                        <div class="line__item">
+                           <label class="line__label" for="mes">Message*</label>
+                           <textarea class="line__input line__input--textarea" id="mes" name="message" placeholder="Your message" required></textarea>
+                        </div>
+
+                        <div class="line__item line__item--checkbox">
+                           <input class="line__input line__input--checkbox" id="ag" name="agree" type="checkbox" required>
+                           <label class="line__label line__label--checkbox" for="ag">I agree to receive communications from Createx Online School</label>
+                        </div>
+
+                        <div class="line__item line__item--button">
+                           <button class="questionnaire__button" type="submit">Send message</button>
+                        </div>
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+
+         </div>
+      </main>
+
+      <footer>
+         <div class="footer__container"></div>
+      </footer>
+   </div>
+</body>
+</html>
